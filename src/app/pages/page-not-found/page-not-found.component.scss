@@ -1,0 +1,26 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+@import "../../sass/vg_typography";
+
+.error-wrapper {
+  text-align: center;
+  margin: 0;
+
+  .page-container {
+    margin: 0 auto;
+
+    img {
+      width: calc(100% - 60px);
+      margin: 30px;
+      max-width: 500px;
+    }
+
+    .error-code {
+      width: 100%;
+    }
+  
+    .error-message {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+<div class="header">
+  <div class="main-container">
+    <a [routerLink]="['/']" class="logo-wrapper">
+      <h2 class="logo">VG</h2>
+    </a>
+    <div class="nav-links-wrapper">
+      <a class="nav-link-users" *ngFor="let navLink of navLinks" routerLink="{{['/vidyaguntakandla' + navLink?.url ]}}">
+        {{ navLink?.label }}
+      </a>
+    </div>
+
+    <div class="hamburger-menu" [ngClass]="showNavBar ? 'active' : ''" (click)="toggleNavBar();">
+      <span class="menu-global menu-top"></span>
+      <span class="menu-global menu-middle"></span>
+      <span class="menu-global menu-bottom"></span>
+
+      <div *ngIf="showNavBar" class="hamburger-nav-links">
+        <div class="links-wrapper">
+          <a class="nav-link-users" *ngFor="let navLink of navLinks" routerLink="{{['/vidyaguntakandla' + navLink?.url ]}}" (click)="onNavLinkClick($event);">
+            {{ navLink?.label }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

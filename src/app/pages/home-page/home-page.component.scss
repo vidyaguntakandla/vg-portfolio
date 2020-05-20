@@ -1,0 +1,279 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+@import "../../sass/vg_typography";
+@import "../../sass/bootstrap_config.scss";
+
+.home-page-wrapper {
+    width: 100%;
+    background-color: white;
+
+    .top-banner {
+        height: 350px;
+        width: 100%;
+
+        .left-banner {
+            float: left;
+            width: calc(50% - 80px);
+            padding: 0 40px;
+            height: 100%;
+
+            animation-duration: 2s;
+            animation-name: slidein;
+            animation-iteration-count: linear;
+            animation-direction: alternate;
+    
+            .social-links {
+                float: left;
+            }
+
+            a {
+                border: 3px solid $theme-color;
+                border-radius: 15px;
+                padding: 10px;
+                float: left;
+                clear: both;
+                margin: 40px 0;
+                
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+    
+            .page-title {
+                span {
+                    color: $theme-color;
+                }
+            }
+        }
+    
+        .right-banner {
+            float: right;
+            width: calc(50% - 80px);
+            padding: 0 40px;
+    
+            img {
+                height: 300px;
+                width: 300px;
+                float: right;
+            }
+        }
+    }
+
+    .bottom-wrapper {
+        height: 500px;
+        width: 100%;
+        background-color: $theme-color;
+        position: relative;
+
+        .grids-wrapper {
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            height: 300px;
+            top: 0;
+            bottom: 0;
+            margin: auto 40px;
+            right: 0;
+            left: 0;
+
+            .grid {
+                background-color: $white;
+                width: calc((100% + 80px) / 4);
+                padding: 0 25px;
+                height: 300px;
+                position: relative;
+                margin: auto;
+
+                animation-duration: 2s;
+                animation-name: slideup;
+                animation-iteration-count: linear;
+                animation-direction: alternate;
+
+                h4 {
+                    margin: 10px 0;
+                }
+
+                img {
+                    height: 35px;
+                    object-fit: contain;         
+                }
+
+                .content {
+                    position: absolute;
+                    padding: 25px;
+                    height: calc(100% - 50px);
+                    top: 0;
+                    width: calc(100% - 50px);
+                    left: 0;
+                    z-index: 3;
+                }
+
+                .level-1 {
+                    width: calc(100% - 40px);
+                    background-color: white;
+                    height: calc(100% + 20px);
+                    position: absolute;
+                    opacity: 0.8;
+                    top: -10px;
+                    right: 20px;
+                    z-index: 1;
+                }
+
+                .level-2 {
+                    width: calc(100% - 60px);
+                    background-color: white;
+                    height: calc(100% + 40px);
+                    position: absolute;
+                    opacity: 0.6;
+                    top: -20px;
+                    right: 30px;
+                    z-index: 2;
+                }
+            }
+        }
+    }
+
+    .homepage-footer {
+        height: auto;
+        width: calc(100% - 80px);
+        background-color: $white;
+        padding: 40px;
+
+        > h5 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            > a {
+                border: 1px solid $theme-color;
+                background-color: $theme-color;
+                color: $white;
+                padding: 10px;
+                border-radius: 10px;
+                text-decoration: none;
+                font-weight: bold;
+                margin: 20px;
+                font-size: 16px;
+                max-height: 20px;
+
+                &:hover {
+                    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.30);
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-between(xs, sm) {
+        .top-banner {
+            height: 700px;
+
+            .left-banner,
+            .right-banner {
+                width: calc(100% - 50px);
+                padding: 0 25px;
+                height: 350px;
+            }
+        }
+
+        .homepage-footer {
+            width: calc(100% - 50px);
+            padding: 25px;
+
+            .nav-wrapper > a {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        .bottom-wrapper {
+            height: 990px;
+
+            .grids-wrapper {
+                display: block;
+                margin: auto;
+                height: auto;
+                bottom: 30px;
+
+                .grid {
+                    width: calc(100% - 100px);
+                    margin: 60px auto;
+                    height: 250px;
+                    animation: none;
+
+                    .content {
+                        padding: 15px;
+                        width: calc(100% - 30px);
+                        height: calc(100% - 30px);
+
+                        h4 {
+                            margin: 5px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        .top-banner {
+            height: 350px;
+
+            .left-banner {
+                width: calc(50% - 80px);
+                padding: 0 40px;            
+            }
+
+            .right-banner {
+                width: calc(50% - 80px);
+                padding: 0 40px;
+            }
+        }
+
+        .bottom-wrapper {
+            height: 990px;
+
+            .grids-wrapper {
+                display: block;
+                margin: auto;
+                height: auto;
+                bottom: 30px;
+
+                .grid {
+                    width: calc(100% - 140px);
+                    margin: 60px auto;
+                    height: 250px;
+                    animation: none;
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        .bottom-wrapper {
+            height: 500px;
+    
+            .grids-wrapper {
+                display: flex;
+                height: 300px;
+                bottom: 0;
+                margin: auto 40px;
+    
+                .grid {
+                    width: calc((100% + 80px) / 4);
+                    height: 300px;
+                    margin: auto;
+    
+                    animation-duration: 2s;
+                    animation-name: slideup;
+                    animation-iteration-count: linear;
+                    animation-direction: alternate;
+                }
+            }
+        }
+    }
+}

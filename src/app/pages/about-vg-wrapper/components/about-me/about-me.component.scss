@@ -1,0 +1,248 @@
+@import "../../../../sass/variables";
+@import "../../../../sass/mixins";
+@import "../../../../sass/vg_typography";
+@import "../../../../sass/bootstrap_config";
+
+.content-wrapper {
+    position: relative;
+
+    .about-me-wrapper {
+        padding-top: 35px;
+        width: 100%;
+        height: auto;
+        max-width: 1024px;
+        margin: auto;
+
+        .about-me {
+            @include font-size-fluid-type(320px, 1440px, 32px, 64px);
+
+            position: relative;
+            text-align: center;
+            width: calc(100% - 80px);
+            margin: auto;
+            color: $black;
+
+            span {
+                color: $theme-color;
+            }
+
+            &::before {
+                position: absolute;
+                top: 50%;
+                display: block;
+                width: 30%;
+                border-bottom: 5px solid $theme-color;
+                content: "";
+                left: 0;
+            }
+
+            &::after {
+                position: absolute;
+                top: 50%;
+                display: block;
+                width: 30%;
+                border-bottom: 5px solid $theme-color;
+                content: "";
+                right: 0;
+            }
+        }
+
+        .page-label {
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: normal;
+            margin-bottom: 25px;
+        }
+
+        .info-wrapper {
+            width: calc(100% - 80px);
+            height: 375px;
+            margin: auto 40px auto 40px;
+
+            .image-wrapper {
+                width: 300px;
+                height: 100%;
+                float: left;
+                position: relative;
+
+                span {
+                    position: absolute;
+                    left: 35px;
+                    color: $theme-color;
+                    transform: rotate(-25deg);
+                    top: 50px;
+                }
+
+                img {
+                    height: 160px;
+                    width: 230px;
+                    position: absolute;
+                    top: -50px;
+                    bottom: 0;
+                    margin: auto;
+                    left: 35px;
+                    -o-object-fit: cover;
+                    object-fit: cover;
+                    transform: rotate(-25deg);
+                    border: 10px solid $theme-color;
+                }
+            }
+
+            .intro {
+                width: calc(100% - 350px);
+                height: 100%;
+                float: right;
+                text-align: justify;
+
+                p:first-child {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        @include media-breakpoint-down(xl) {
+            .info-wrapper {
+                height: 300px;
+                margin: auto 40px 25px 40px;
+            }
+        }
+
+        @include media-breakpoint-down(lg) {
+            .info-wrapper {
+                height: 378px;
+            }
+        }
+
+        @include media-breakpoint-between (xs, sm) {
+            .about-me {
+                width: calc(100% - 50px);
+
+                &::before {
+                    width: 20%;
+                }
+    
+                &::after {
+                    width: 20%;
+                }
+            }
+
+            .info-wrapper {
+                width: calc(100% - 50px);
+                height: auto;
+                margin: auto 25px auto 25px;
+
+                .image-wrapper {
+                    width: 100%;
+
+                    span {
+                        display: none;
+                    }
+
+                    img {
+                        top: 0;
+                        position: relative;
+                        margin: auto auto 25px auto;
+                        display: block;
+                        width: 100%;
+                        transform: none;
+                        border: none;
+                        object-fit: contain;
+                        left: 0;
+                    }
+                }
+
+                .intro {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    .speciality-info {
+        text-align: justify;
+        width: calc(100% - 100px);
+        height: auto;
+        max-width: 944px;
+        margin: auto;
+
+        @include media-breakpoint-between (xs, sm) {
+            width: calc(100% - 50px);
+        }
+
+        @include media-breakpoint-between(sm, md) {
+            margin-top: 25px;
+        }
+    }
+
+    .frameworks-wrapper {
+        display: table;
+        width: calc(100% - 50px);
+        max-width: 944px;
+        margin: 30px auto 35px auto;
+
+        .images-wrapper {
+            width: fit-content;
+            display: table-cell;
+            vertical-align: top;
+        
+            img {
+                width: 40px;
+                height: 40px;
+                cursor: default;
+
+                margin: 15px 15px 0 0;
+            }
+        }
+
+        .skills-wrapper {
+            width: fit-content;
+            padding-left: 50px;
+            display: table-cell;
+            float: right;
+
+            ul {
+                padding-left: 15px;
+
+                li {
+                    list-style: none;
+                    padding: 5px 0;
+
+                    strong {
+                        padding-right: 15px;
+                        font-weight: 900;
+                        color: $theme-color;
+                    }
+                }
+            }
+        }
+
+        @include media-breakpoint-between (sm, md) {
+            width: calc(100% - 100px);
+
+            .skills-wrapper {
+                width: 100%;
+            }
+        }
+
+        @include media-breakpoint-between (xs, sm) {
+            .images-wrapper {
+                display: block;
+                padding: 0;
+            }
+    
+            .skills-wrapper {
+                display: block;
+                padding: 0;
+                text-align: right;
+                margin-top: 25px;
+                width: 100%;
+
+                ul li {
+                    padding: 5px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}

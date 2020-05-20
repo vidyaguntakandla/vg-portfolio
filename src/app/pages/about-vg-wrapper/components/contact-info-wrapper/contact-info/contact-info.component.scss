@@ -1,0 +1,394 @@
+@import "../../../../../sass/variables";
+@import "../../../../../sass/mixins";
+@import "../../../../../sass/vg_typography";
+@import "../../../../../sass/bootstrap_config";
+
+@keyframes shiftup {
+    from {
+      top: 0;
+    }
+  
+    to {
+      top: -250px;
+    }
+}
+
+@keyframes shiftupmobile {
+    from {
+      top: 0;
+    }
+  
+    to {
+      top: -200px;
+    }
+}
+
+.contact-info-wrapper {
+    display: block;
+    height: auto;
+    width: 100vw;
+    margin: auto;
+    position: relative;
+    margin-top: 78px;
+    max-width: 1440px;
+    margin: auto;
+
+    .page-banner-image {
+        height: auto;
+        object-fit: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        background-image: url('/assets/backgrounds/contact-me-background.jpg');
+        background-color: $theme-color;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+
+        .contact-info-content {
+            padding-bottom: 30px;
+
+            h2 {
+                text-align: center;
+                color: $theme-color;
+                padding: 25px 0 20px 40px;
+
+                b {
+                    // color: $theme-color;
+                    color: $red;
+                }
+            }
+
+            app-social-media-icon-elements {
+                width: 100%;
+            }
+
+            .social-media-icons-wrapper {
+                margin-top: 70px;
+                display: block;
+
+                ul {
+                    word-spacing: 0;
+                    width: calc(100% - 220px);
+                    padding: 0 50px;
+                    margin: 0 60px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+            }
+
+            .flex-wrapper {
+                display: flex;
+                justify-content: space-between;
+                height: 300px;
+                top: 0;
+                bottom: 0;
+                margin: 40px;
+                right: 0;
+                left: 0;
+
+                .box {
+                    width: calc((100% + 80px) / 4);
+                    padding: 25px;
+                    height: calc(300px - 50px);
+                    background-color: $white;
+                    border-radius: 12px;
+                    position: relative;
+
+                    transition: opacity 1s ease-out;
+                    
+                    h4 {
+                        font-weight: bold;
+                        padding: 0;
+                        margin: 0;
+                        color: $red;
+                    }
+
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 80%;
+                        margin-top: 20px;
+                        float: left;
+                    }
+
+                    ul {
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        margin: auto;
+                        height: fit-content;
+                        padding-left: 10px;
+                        width: fit-content;
+                        left: 0;
+                        right: 0;
+                        max-width: calc(100% - 60px);
+
+                        li {
+                            b {
+                                font-weight: normal;
+                                color: $red;
+                            }
+
+                            padding: 6px 0;
+                            list-style: none;
+                            line-height: 20px;
+                        }
+                    }
+                }                
+            }
+        }
+
+        .slide-button {
+            display: none;
+        }
+    }
+
+    .page-banner {        
+        .content-wrapper {
+            position: relative;
+
+            animation-duration: 2s;
+            animation-name: slidedown;
+            animation-iteration-count: linear;
+            animation-direction: alternate;
+
+
+            .about-me-wrapper {
+                background-color: $light-grey;
+                padding: 10px 0 40px 0;
+                width: 100%;
+                height: auto;
+
+                .about-me {
+                    position: relative;
+                    text-align: center;
+                    width: calc(100% - 80px);
+                    margin: auto;
+        
+                    &::before {
+                        position: absolute;
+                        top: 50%;
+                        display: block;
+                        width: 30%;
+                        border-bottom: 5px solid $theme-color ;
+                        content: "";
+                        left: 0;
+                    }
+        
+                    &::after {
+                        position: absolute;
+                        top: 50%;
+                        display: block;
+                        width: 30%;
+                        border-bottom: 5px solid $theme-color ;
+                        content: "";
+                        right: 0;
+                    }
+                }
+
+                p {
+                    width: calc(100% - 80px);
+                    margin: auto;
+                    font-size: 30px;
+                    text-align: center;
+
+                    &.des {
+                        margin: 20px auto;
+                    }
+                }
+
+                .seperator {
+                    margin-top: 25px;
+                }
+
+                .view-about-me {
+                    border: 1px solid $theme-color ;
+                    border-radius: 12px;
+                    padding: 10px;
+                    color: $theme-color ;
+                    margin: auto;
+                    display: block;
+                    width: 240px;
+                    text-align: center;
+                }
+
+                h1 {
+                    text-align: center;
+                    color: $theme-color ;
+            
+                    &:first-child {
+                        font-weight: normal;
+                    }
+                }
+            }
+
+            .carousel-wrapper {
+                height: 450px;
+                max-width: 750px;
+                margin: auto;
+                background-color: $white;
+                border-radius: 30px;
+                padding: 40px 25px;
+                position: absolute;
+                right: 0;
+                left: 0;
+                top: -250px;
+    
+                animation-duration: 2s;
+                animation-name: shiftup;
+                animation-iteration-count: linear;
+                animation-direction: alternate;
+            }
+        }
+    
+        .seperator {
+            border-width: 2px;
+            border-color: $theme-color ;
+            width: 300px;
+            color: $theme-color ;
+            margin-bottom: 40px;
+        }
+    }
+
+    @include media-breakpoint-between (sm, md) {
+        .page-banner-image {
+            position: relative;
+
+            .contact-info-content {
+                .social-media-icons-wrapper ul {
+                    width: calc(100% - 120px);
+                    padding: 0;
+                }
+
+                .flex-wrapper {
+                    flex-wrap: wrap;
+                    margin: 40px 40px 20px 40px;
+                    transition: all linear 2s;
+    
+                    > .box {
+                        flex-basis: 100%;
+                        margin-bottom: 65px;
+    
+                        img {
+                            width: 60%;
+                            position: absolute;
+                            height: 70%;
+                            left: 0;
+                            right: 0;
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+
+            .slide-button {
+                display: block;
+                margin: 0 40px 10px 40px;
+                position: absolute;
+                bottom: 8px;
+                color: $theme-color ;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+         .page-banner .content-wrapper {
+            .carousel-wrapper {
+                max-width: calc(100% - 150px); 
+            }
+        }
+    }
+
+    @include media-breakpoint-between (xs, sm) {
+        .page-banner-image {
+            position: relative;
+
+            .contact-info-content {
+                .social-media-icons-wrapper ul {
+                    width: calc(100% - 50px);
+                    padding: 0;
+                    margin: 0 25px;
+                }
+
+                h2 {
+                    padding: 25px 10px 20px 10px;
+                }
+
+                .flex-wrapper {
+                    flex-wrap: wrap;
+                    margin: 40px 40px 20px 40px;
+                    transition: all linear 2s;
+    
+                    > .box {
+                        flex-basis: 100%;
+                        margin-bottom: 70px;
+    
+                        img {
+                            width: 60%;
+                            position: absolute;
+                            height: 70%;
+                            left: 0;
+                            right: 0;
+                            margin: auto;
+                        }
+
+                        ul li {
+                            word-break: break-all;
+
+                            &:first-child {
+                                padding-top: 45px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .slide-button {
+                display: block;
+                margin: 0 40px 10px 40px;
+                position: absolute;
+                bottom: 8px;
+                color: $theme-color ;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+
+        .page-banner {
+            .content-wrapper {
+                .carousel-wrapper {
+                    max-width: calc(100% - 100px);
+                    height: 350px;
+                    top: -200px;
+    
+                    animation-duration: 2s;
+                    animation-name: shiftupmobile;
+                    animation-iteration-count: linear;
+                    animation-direction: alternate;
+                }
+    
+                .about-me-wrapper {
+                    p {
+                        width: calc(100% - 50px);
+                        font-size: 25px;
+                    }
+    
+                    .about-me {
+                        width: calc(100% - 50px);
+    
+                        &::before {
+                            width: 25%;
+                        }
+            
+                        &::after {
+                            width: 25%;
+                        }
+                    }
+                }
+    
+                .seperator {
+                    width: 250px;
+                }
+            }
+        }
+    }
+}

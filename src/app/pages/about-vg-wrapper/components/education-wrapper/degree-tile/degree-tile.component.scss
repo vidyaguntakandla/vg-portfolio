@@ -1,0 +1,110 @@
+@import "../../../../../sass/variables";
+@import "../../../../../sass/mixins";
+@import "../../../../../sass/vg_typography";
+@import "../../../../../sass/bootstrap_config";
+
+.tile-view {
+    margin-bottom: 100px;
+
+    .university-wrapper {
+        padding-bottom: 40px;
+        border-bottom: 2px solid $theme-color;
+        margin-bottom: 30px;
+
+        img {
+            width: 80px;
+            height: 80px;
+            margin-right: 15px;
+        }
+    
+        h2 {
+            margin-bottom: 15px;
+            vertical-align: super;
+            float: right;
+            line-height: 100px;
+        }
+    }
+
+    .degree-description {
+        position: relative;
+
+        img {
+            width: 150px;
+            height: 115px;
+            position: absolute;
+            right: 0;
+            top: -10px;
+            object-fit: cover;
+        }
+        ul {
+            width: 65%;
+
+            li {    
+                padding: 5px 0;
+                width: 100%;
+            }
+        }
+    }
+
+    .duration-location-info {
+        background-color: $light-grey;
+        border: none;
+        height: auto;
+        position: absolute;
+        width: calc(100% - 50px);
+        margin-left: -25px;
+        padding: 30px 25px;
+        bottom: 0;
+
+        .degree-duration {
+            color: $theme-color;
+        }
+    }
+
+    @include media-breakpoint-between (xs, sm) {
+        .degree-description img {
+            position: relative;
+            width: 75%;
+            margin: 25px auto -45px auto;
+            display: block;
+            height: 200px;
+        }
+
+        .duration-location-info {
+             margin-left: -25px;
+        }
+
+        .university-wrapper {
+            padding-bottom: 25px;
+
+            img {
+                width: 50px;
+                height: 50px;
+                margin-right: 7px;
+            }
+
+            h2 {
+                margin: 15px 20px 0 0;
+                display: block;
+                float: none;
+                height: auto;
+                line-height: normal;
+            }
+        }
+    }
+
+    @include media-breakpoint-up (md) {
+        .university-wrapper {
+            img {
+                width: 50px;
+                height: 50px;
+                margin-right: 7px;
+            }
+
+            h2 {
+                font-size: 26px;
+                line-height: 65px;
+            }
+        }
+    }
+}

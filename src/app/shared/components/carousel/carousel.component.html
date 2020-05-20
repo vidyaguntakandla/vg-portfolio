@@ -1,0 +1,23 @@
+<!-- carousel -->
+<div class="carousel">
+    <div *ngFor="let slide of slides; let i = index">
+        <div class="slide" *ngIf="i === currentSlide">
+            <div class="slide-content-wrapper">
+                <h2>{{ slide?.headline }}</h2>
+                <h4 *ngFor="let content of slide?.content;">{{ content }}</h4>
+                <img *ngIf="slide?.imageSrc" [src]="slide?.imageSrc[0]" [alt]="slide?.imageSrc[1]" />
+            </div>
+        </div>
+    </div>
+  
+    <!-- controls -->
+    <div class="paginator-wrapper">
+        <span *ngFor="let slide of slides; let i = index;" class="{{ (i === currentSlide) ? 'active indicator' : 'indicator'}}" (click)="onIndicatorClick(i);"></span>
+    </div>
+    <button class="control prev" (click)="onPreviousClick()">
+      <span class="arrow left"></span>
+    </button>
+    <button class="control next" (click)="onNextClick()">
+      <span class="arrow right"></span>
+    </button>
+</div>

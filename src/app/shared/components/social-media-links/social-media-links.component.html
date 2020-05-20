@@ -1,0 +1,11 @@
+<div class="socialMediaButtons" [ngClass]="(horizontal) ? 'socialButtonHorizontal' : 'socialButtonVertical'">
+    <div [ngClass]="(horizontal) ? 'pulLButtonsRight' : ''">
+        <a class="icon-linkedin" href="https://www.linkedin.com/in/vidyaguntakandla" target="_blank" title="linkedin"></a>
+        <!-- <a class="icon-facebook" href="" target="_blank" title="facebook"></a> -->
+        <a class="icon-email" href="javascript:void(0)" (click)="onEmailClick('vidya.guntakandla@gmail.com');" title="click to copy my email address to your clickboard." #copyEmail></a>
+        <a class="icon-printer" href="javascript:void(0)" (click)="onPrintClick()" title="Print Page"></a>
+        <a class="icon-download-resume" href="/assets/vg_resume.docx" tittle="Download Resume" download></a>
+        <!-- <a class="icon-download" href="/assets/vg_resume.docx" tittle="Download" download></a> -->
+    </div>
+</div>
+  

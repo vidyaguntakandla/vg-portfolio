@@ -1,0 +1,156 @@
+[
+  {
+    "clientName": "Staples Inc",
+    "duration": "Sep 2018 – Present",
+    "title": "Software Developer",
+    "description": "Worked in two different projects B2B and StaplesConnect marketing applications concentrating on web application technologies like Reactjs, Angular cli and Angular Universal Server-Side Rendering (SSR) by Agile methodology. Created Angular Material clone library for most reusable components. Used SASS pre-processor and modules of bootstrap in styling the User Interface. Hippo (bloomreach) CMS for content management for better business configurations of the contents used.",
+    "image": "staples",
+    "address": "500 Staples Dr, Framingham, MA-01702",
+    "site": "https://www.staplesconnect.com/",
+    "skillImages": [ "html5", "bootstrap", "angular", "react" ],
+    "responsibilities": [
+      "Conceptualizing and develop single page client-server-side interface using scripting languages, Angular cli and nodeJs, and also using Hippo CMS flow",
+      "Building Rich customer Retail digital experience by maintaining and creating not only the static pages but also design modular and reusable Angular cli components and designing the architecture involving cloud services and Akamai CDN.",
+      "Implementing screens for the front end provided by the UX team using Angular CLI and Angular SSR.",
+      "Implementing application to serve on the service side using Angular Universal Server-Side Rendering (SSR) for better performance of the application",
+      "Troubleshooting client-server connectivity and RestApi Connectivity using ‘Postman’.",
+      "Exploring upgrades to the existing technology where the benefit pays for the research and implement them.",
+      "Implementing the application by breaking it into separate modules and reusable directive/components so the app can have focused and developed independently.",
+      "Using Sass pre-processor and modules of bootstrap in styling the User interface.",
+      "Working in Hippo (bloomreach) CMS for content management for better business configurations of the contents used in the application.",
+      "Working on pages from scratch from creating Initial routes and developing components/containers for the pages to serve them on the server-side.",
+      "Working in a team, understand the existing architecture under ecommerce platform and migrating the application from WCS to Reactjs and Node.js application with necessary changes to the design to serve on growing business expansions",
+      "Implementing various screens for the front-end using ReactJS and used various predefined components from NPM",
+      "Implementing features from scratch, from creating Initial routes and developing components/containers for the pages following the Agile methodology on sprint basis",
+      "Involving in troubleshooting client-server connectivity and RestApi using ‘Postman’",
+      "Whole application is split into lot of smaller independent modules/projects which can run on their own spaces",
+      "Responsible to create reusable components to use them wherever required",
+      "Convert the wireframes to HTML5/CSS3/SCSS that are fluid in nature, which will fit in varying resolutions for Desktop",
+      "Using Bootstrap for responsive web designing",
+      "Creating protractor end-to-end tests as well as Karma, Jasmine unit tests for all the components created.",
+      "Worked with Bitbucket Subversion for check-in and checkout code and followed common team coding style.",
+      "Collaborating with different team members like Product Owner, Product Manager, project manager, designers, leads and business team to make sure the requirements are clear in all the perspectives."
+    ],
+    "accomplishments": [
+      "Built with React, Angular7/8 Cli, Angular Universal Server-Side Rendering (SSR) and Bootstrap",
+      "Hippo Bloomreach Expereince (CMS) and Eventbrite integration",
+      "Restyled UI, design, and branding",
+      "Native Javascript geolocation and Custom Google Maps API integration",
+      "Contributed creative strategy and UX",
+      "Unique admin experiences using Angular Material library"
+    ]
+  },
+  {
+    "clientName": "Kohl's",
+    "duration": "Feb 2017 – Aug 2018",
+    "title": "Software Developer/ on-site Lead",
+    "description": "Worked on two applications (CSC and Chatbot) and Account Maintenance module in webstore (eCommerce). Lead a team of six people and contributed more towards the development platform and in moving forward with software solutions and code reviews. Used KJS framework (kohl’s internal JS framework) implemented using Reactjs for client side coding Used jQuery and jsrender template engines with Google closure compiler. Implementing web view to support Test&Target, Hooklogic and Analytics.",
+    "image": "kohls",
+    "address": "620 North McCarthy Boulevard, Milpitas, CA-95035",
+    "site": "https://www.kohls.com/",
+    "skillImages": [ "html5", "sass", "react", "nodejs"],
+    "responsibilities": [
+      "Worked in a team, understand the existing architecture under ecommerce platform and make necessary changes to the design to serve various platform needs based on growing business expansions",
+      "Lead a team of 6 people and contributed more towards the development platform and in moving forward with software solutions and code reviews.",
+      "Implementation and maintenance of front end using JavaScript, node.Js and HTML, which serves as the face for the entire product search",
+      "Managed the offshore team to make them understand the module production and feature requirements and to get the requirements done.",
+      "Implemented features from scratch following the software development life cycle",
+      "Experienced at troubleshooting system issues with MongoDB, such as client connectivity",
+      "Collaborated closely with groups in and outside of development team to achieve well designed responsive design interface.",
+      "Worked with analysts and UX designers on the requirement and followed the company standards in development of applications.",
+      "Convert the wireframes to HTML5/CSS3 that are fluid in nature, which will fit in varying resolutions for Desktop.",
+      "Implemented in Agile development process on Software Development Life Cycle and done with effort estimations using Function points & 3p estimations.",
+      "Involved in implementing some of the POC's and application components using web technologies like HTML4/HTML5, CSS2/CSS3, JavaScript, JQuery, React.js framework and KJS AJAX libraries",
+      "Worked with Subversion for check-in and checkout unit code and followed common team coding style (git & gerrit).",
+      "Coordination with team in the daily routine works as a part of agile methodology, which includes code reviewing, validations, demos and coordinating with system analysts, product team to improve the UI of the domain web site."
+    ],
+    "accomplishments": [
+      "Leading a team including features/enhancement development",
+      "Custom jQuery script (Kjs internal framework), running Node server and React components",
+      "Reorganized user process and flow",
+      "Built dynamic templates using jQuery templating engine",
+      "Integrating thirdparties for DFPs. Hooklogic and Test&Target implementation",
+      "User authentication via NuData Security"
+    ]
+  },
+  {
+    "clientName": "Apple Inc",
+    "duration": "Aug 2015 – Jan 2017",
+    "title": "Web UI Developer",
+    "description": "Worked on a web application called AST2 for AppleCare Genius Bar technicians to capture and fix device defects in testing Apple products. Used AWJS, a JS Apple\"s internal framework which is implemented based on pure Vanilla javascript for client side code implementation. Worked on D3js MVC for more custom web-based visualization of product data. Worked on Underscore.js for templating. Application level coding to interact with the backend Java code using AJAX websockets",
+    "image": "apple",
+    "address": "475 Potrero Avenue, Sunnyvale, CA-94085",
+    "site": "https://istweb.apple.com",
+    "skillImages": [ "html5", "css3", "jquery", "nodejs"],
+    "responsibilities": [
+      "Worked in a team which is involved in developing the User Interface, layout and front-end programming (HTML) for web application that matches the business requirements",
+      "Involved in design and development of server side layer REST API using Eclipse IDE",
+      "Involved in building highly interactive web application using web technologies like HTML/5, CSS/3, JavaScript, JQuery, D3.js and latest AJAX libraries",
+  "Used CSS media query to make web pages responsive",
+      "Used JQuery to make the frontend components interact with the JavaScript functions to add dynamism to the web pages at the client side.",
+      "Used D3.js to structure JavaScript code in an MVC for more custom web-based visualization.",
+      "Defined the application’s user interface using HTML through pure JavaScript and JQuery.",
+      "Debug the application using Firebug too traverse the documents and manipulated the nodes using DOM and DOM functions",
+      "Creating/editing SVG images to maintain unique icons/images throughout the application",
+      "Worked with Subversion for check-in and checkout unit code and followed common team coding style",
+      "Handling platform compatibility issues (Safari, IE and Firefox) on both Windows",
+      "Wrote application level code to interact with the backend (Java) code AJAX and JSON and also involved in very good debugging of Java code to track the bugs"
+    ],
+    "accomplishments": [
+      "Worked with MVC framework, Node server and web projects with Maven",
+      "Built dynamic templates using underscore templating engine and Google closer compiler",
+      "Visualization using D3js and creating/editing SVG images",
+      "Developed CSS, LESS and JS fully responsive menu",
+      "Materializing project phases and activities",
+      "Dependency free JS config and Splunk for debugging"
+    ]
+  },
+  {
+    "clientName": "McNeese State University",
+    "duration": "Jan 2014 – May 2015",
+    "title": "Graduate Teaching Assistant",
+    "description": "Worked as Teaching Assistant for the courses C and Java programming languages. Web-based server software and C programming lab works. Knowledge transfer and guiding students in coding java.",
+    "image": "university",
+    "address": "4205 Ryan St, Lake Charles, LA-70605",
+    "site": "https://www.mcneese.edu/",
+    "skillImages": ["c", "java", "blackboard"],
+    "responsibilities": [
+      "Mastered Black board (Web-based server software)",
+      "Grading assignments and home works of students and giving them feedback",
+      "Supporting students during hands on sessions",
+      "Supporting and guiding students in executing ‘C programs’ in lab works",
+      "Supporting and guiding students in coding java."
+    ],
+    "accomplishments": [
+      "C PROGRAMMING LANGUAGE and JAVA assisting knowledge transfer",
+      "Web-based server software",
+      "Supporting during hands on sessions",
+      "guiding in executing ‘C programs’ in lab works",
+      "guiding in coding java"
+    ]
+  },
+  {
+    "clientName": "Hucon Solutions",
+    "duration": "Nov 2012 – July 2013",
+    "title": "FullStack Engineer",
+    "description": "GIS property viewer with Google Maps project using Front-end technologies like HTML, CSS, Javascript, Java, .Net, SQL server Oracle. Used Google Maps for property view integration and site portfolios. Used Software Development Life Cycle for system modules implementation. ",
+    "image": "hucon",
+    "address": "2E, Surya Towers, S P Road, Secunderabad, Hyderabad, Telangana 500003",
+    "site": "http://www.huconsolutions.com/",
+    "skillImages": [ "html5", "javascript", "java", "sql"],
+    "responsibilities": [
+      "Implemented Interactive User Interfacte using HTML5, CSS3 and javascript.",
+      "Worked on authentication pages and connecting with backend usig Java",
+      "Worked on storing user related information in database",
+      "Managing SQL server"
+    ],
+    "accomplishments": [
+      "Basic Front-end technologies",
+      "Native Javascript geolocation and Custom Google Maps API integration",
+      "simple web application using HTML and CSS and javascript",
+      "Javascript input validation and Hover and click actions",
+      "Client-side rendering via AJAX",
+      "Hours of fun!"
+    ]
+  }
+]

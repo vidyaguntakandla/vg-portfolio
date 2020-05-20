@@ -1,0 +1,29 @@
+// Regular
+@font-face {
+  font-family: 'TT Norms';
+  src: url('/assets/fonts/tt_norms_regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+//Bold
+@font-face {
+  font-family: 'TT Norms';
+  src: url('/assets/fonts/tt_norms_bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+//Bold Italic
+@font-face {
+  font-family: 'TT Norms';
+  src: url('/assets/fonts/tt_norms_bold_italic.otf') format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+//Italic
+@font-face {
+  font-family: 'TT Norms';
+  src: url('/assets/fonts/tt_norms_italic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}

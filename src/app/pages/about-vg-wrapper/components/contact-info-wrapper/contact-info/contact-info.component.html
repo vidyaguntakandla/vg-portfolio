@@ -1,0 +1,44 @@
+<div class="contact-info-wrapper">
+    <div class="page-banner-image">
+        <div class="contact-info-content">
+            <h2>Contact <b>Vidya Guntakandla</b> @</h2>
+            <div class="social-media-icons-wrapper">
+                <ul class="list-icon-items clearfix no-margins">
+                    <app-social-media-icon-elements></app-social-media-icon-elements>
+                </ul>
+            </div>
+            <!-- <div class="flex-wrapper" #flex>
+                <div *ngFor="let slide of slides; let i = index" class="box" [attr.index]="i">
+                    <h4>{{ slide.headline }}</h4>
+                    <img *ngIf="slide?.image" [src]="slide?.image?.src" [alt]="slide?.image?.alt" />
+                    <ul>
+                        <li *ngFor="let content of slide?.content | keyvalue: originalOrder">
+                            <b>{{ content?.key }}:</b> {{content?.value}}
+                        </li>
+                        <li>{{ slide?.details }}</li>
+                    </ul>
+                </div>
+            </div> -->
+        </div>
+        <!-- <div class="slide-button" (click)="onSlideButtonClick();">Slide through details</div> -->
+    </div>
+    <div class="page-banner">
+        <div class="content-wrapper">
+            <div class="about-me-wrapper">
+                <h1>USER INTERFACE / USER EXPERIENCE</h1>
+                <h1>DEVELOPER / DESIGNER</h1>
+
+                <h2 class="about-me">About Me</h2>
+                <p class="des">My career began designing and developing Rich Interface web applications, and I’ve arrived as an all around Software Developer working in Massachusetts and California.</p>
+                <p>I wonder what’s next...</p>
+                <hr class="seperator" />
+
+                <a class="view-link view-about-me" [routerLink]="['/vidyaguntakandla/about-me']">VIEW MORE ABOUT ME</a>
+            </div>
+    
+            <!-- <div class="carousel-wrapper">
+                <app-carousel [slides]="slides"></app-carousel>
+            </div> -->
+        </div>
+    </div>
+</div>  

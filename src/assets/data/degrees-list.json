@@ -1,0 +1,18 @@
+[
+    {
+        "university": "McNeese State University",
+        "degree": "Masters in Computer Science",
+        "duration": "Aug 2013 – May 2015",
+        "image": "university",
+        "address": "Lake Charles, LA",
+        "score": "3.5"
+    },
+    {
+        "university": "Jawaharlal Nehru Technological University",
+        "degree": "Bachelor of Technology in Computer Science",
+        "duration": "Sep 2009 – June 2013",
+        "image": "jntuh",
+        "address": "Hyderabad, Telangana - India",
+        "score": "3.725"
+    }
+  ]

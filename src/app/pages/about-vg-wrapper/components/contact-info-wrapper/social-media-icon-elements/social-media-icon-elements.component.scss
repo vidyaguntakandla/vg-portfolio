@@ -1,0 +1,98 @@
+@import "../../../../../sass/variables";
+@import "../../../../../sass/mixins";
+@import "../../../../../sass/vg_typography";
+@import "../../../../../sass/bootstrap_config";
+
+li {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    float: none;
+    vertical-align: top;
+    font-size: 18px;
+    text-align: center;
+    margin: 0 10px;
+    width: calc((100% / 5) - 20px);
+
+    &:hover {
+        a .circ {
+            color: white;
+            background-color: $theme-color;
+            border: 1PX solid $white;
+        }
+    }
+
+    a {
+        border: none;
+        display: block;
+        transition: all 275ms;
+        cursor: pointer;
+        text-decoration: none;
+        color: #181818;
+
+        .circ {
+            border: 1px solid $red;
+            border-radius: 50%;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            vertical-align: middle;
+            *vertical-align: auto;
+            *zoom: 1;
+            *display: inline;
+            color: $red;
+            background-color: $light-grey;
+            -moz-transition-property: color, color;
+            -o-transition-property: color, color;
+            -webkit-transition-property: color, color;
+            transition-property: color, color;
+            -moz-transition-duration: 275ms;
+            -o-transition-duration: 275ms;
+            -webkit-transition-duration: 275ms;
+            transition-duration: 275ms;
+            position: relative;
+
+            svg {
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                left: 0;
+                margin: auto;
+            }
+        }
+
+        h5 {
+            color: $theme-color;
+        }
+
+        .pseudo-link {
+            word-wrap: break-word;
+            word-break: break-all;
+            color: $theme-color;
+            transition: all 275ms;
+            cursor: pointer;
+            text-decoration: none;
+            border-bottom: 1px solid $theme-color;
+        }
+    }
+
+    @include media-breakpoint-between (xs, sm) {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+
+        a {
+            .pseudo-link {
+                font-size: 16px;
+            }
+        }
+    }
+}

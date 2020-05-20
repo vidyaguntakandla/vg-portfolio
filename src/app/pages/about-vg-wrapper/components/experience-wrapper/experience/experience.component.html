@@ -1,0 +1,62 @@
+<div class="page-container">
+    <div class="experience-wrapper">
+        <div class="top-banner">
+            <img alt="gifi" class="gifi-image" src="https://media.giphy.com/media/gh0RRgkTXedvF0pDc0/giphy.gif">
+            <div class="floating-div">
+                <div class="hexagon"></div>
+                <img src="/assets/me.JPG" alt="my_photo"/>
+                <h4 class="info">
+                    I'm a Software Developer for <a href="https://www.staplesconnect.com/">Staples Inc</a> in Framingham, MA.
+                    I have serious passion for UI development, and creating intuitive, dynamic user Interface experience.
+                    Let's make something special.
+                </h4>
+            </div>
+        </div>
+    </div>
+    <div class="info-blocks-wrapper">
+        <div class="work-brief">
+            <div class="coder-info">
+                <h2>Coder</h2>
+                Front-end development <br />
+                HTML / CSS <br />
+                JavaScript <br />
+                Eating pizza <br />
+                Swearing at computer <br />
+            </div>
+            <div id="pie" #pie>
+                <svg></svg>
+            </div>
+        </div>
+        <div class="info-blocks">
+            <div class="designer-info">
+                <h2>Designer</h2>
+                UI design <br />
+                Interaction design <br />
+                Visualization design using D3js<br />
+                Research <br />
+                Making it 'pop' <br />
+            </div>
+        
+            <div class="interactor-info">
+                <h2>Interactor</h2>
+                Planning <br />
+                Grooming <br />
+                Client Interaction <br />
+                Team lunches <br />
+                Parties<br />
+            </div>
+        </div>
+    </div>
+
+    <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+        <path d="M0 0 L50 100 L100 0 Z" fill="#f3f3f3" stroke="white"></path>
+    </svg>
+
+    <div class="projects-wrapper">
+        <h1>Projects</h1>
+        <div class="header-bar"></div>
+        <div *ngFor="let project of projectsData" class="project-tile">
+            <app-project-tile [projectInfo]="project"></app-project-tile>
+        </div>
+    </div>
+</div>

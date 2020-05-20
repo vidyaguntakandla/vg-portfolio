@@ -1,0 +1,133 @@
+@import "variables";
+@import "mixins";
+@import "tt_norms-fonts";
+
+h1 {
+  @include font-size-fluid-type(320px, 1440px, 32px, 48px);
+
+  font-family: $tt-norms;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  color: $black;
+}
+
+h2 {
+  @include font-size-fluid-type(320px, 1440px, 22px, 38px);
+
+  font-family: $tt-norms;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  color: $black;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+h3 {
+  @include font-size-fluid-type(320px, 1440px, 18px, 32px);
+
+  font-family: $tt-norms;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  color: $black;
+}
+
+h4 {
+  @include font-size-fluid-type(320px, 1440px, 17px, 25px);
+
+  font-family: $tt-norms;
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  color: $black;
+}
+
+h5 {
+  @include font-size-fluid-type(320px, 1440px, 15px, 20px);
+
+  font-family: $tt-norms;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  color: $black;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+
+/* Body Text Section */
+.body-text-1 {
+  @include font-size-fluid-type(320px, 1440px, 15px, 20px);
+
+  font-family: $tt-norms;
+  font-weight: normal;
+  font-style: normal;
+  color: $black;
+}
+
+.body-text-2 {
+  @include font-size-fluid-type(320px, 1440px, 14px, 17px);
+
+  font-family: $tt-norms;
+  font-weight: normal;
+  font-style: normal;
+  color: $black;
+}
+
+.body-text-3 {
+  @include font-size-fluid-type(320px, 1440px, 12px, 15px);
+
+  font-family: $tt-norms;
+  font-weight: normal;
+  font-style: normal;
+  color: $black;
+}
+
+.body-text-4 {
+  @include font-size-fluid-type(320px, 1440px, 11px, 13px);
+
+  font-family: $tt-norms;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  color: $black;
+}
+
+p {
+  @include font-size-fluid-type(320px, 1440px, 14px, 21px);
+
+  font-family: $tt-norms;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  color: $black;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.view-link {
+  @include font-size-fluid-type(320px, 1440px, 15px, 18px);
+
+  font-weight: bold;
+  color: $theme-color;
+  text-decoration: none;
+  outline: none;
+
+  &:hover {
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.30);
+  }
+}
+
+.maxout-grid {
+  max-width: 1440px;
+  margin: auto;
+}

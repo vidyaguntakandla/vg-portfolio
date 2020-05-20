@@ -1,0 +1,126 @@
+@import "../../../../../sass/variables";
+@import "../../../../../sass/mixins";
+@import "../../../../../sass/vg_typography";
+@import "../../../../../sass/bootstrap_config";
+
+.page-container {
+    position: relative;
+    width: 100vw;
+    max-width: 1440px;
+    margin: auto;
+
+    .education-wrapper {
+        height: auto;
+        margin: 118px 40px 0 40px;
+
+        .top-banner {
+            position: relative;
+
+            .gifi-image {
+                width: calc(100% + 80px);
+                margin: -40px 0 0 -40px;
+                height: 700px;
+                object-fit: scale-down;
+                height: 85vh;
+                margin-top: -130px;
+            }
+    
+            .floating-div {
+                width: calc(100% - 80px);
+                height: 150px;
+                display: flex;
+                position: absolute;
+                bottom: -115px;
+                background-color: white;
+                border-radius: 10px;
+                padding: 40px;
+
+                img {
+                    width: 30%;
+                    height: calc(100% - 80px);
+                    border: 1px solid $theme-color;
+                    border-radius: 20px;
+                    position: absolute;
+                }
+
+                .info {
+                    width: calc(70% - 100px);
+                    height: calc(100% - 80px);
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto 30px;
+                    right: 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    svg {
+        margin-top: -20vh;
+    }
+
+    .degrees-wrapper {
+        width: 90%;
+        height: auto;
+        margin: auto;
+        max-width: 1024px;
+        margin-bottom: 100px;
+
+        img {
+            width: 80px;
+            height: 80px;
+            margin-right: 15px;
+        }
+
+        h1 {
+            margin: 40px 0 0 -1px;
+            text-align: center;
+        }
+
+        .header-bar {
+            background: $black;
+            height: 4px;
+            margin: 15px auto 75px auto;
+            width: 70px;
+        }
+
+        .degree-tile {
+            width: calc(100% - 50px);
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 2px 30px 0 rgba(0, 0, 0, .15);
+            margin: 30px 0;
+            padding: 25px 25px 40px 25px;
+            position: relative;
+        }
+    }
+
+    @include media-breakpoint-between (xs, sm) {
+        .degrees-wrapper {
+            width: calc(100% - 50px);
+
+            .degree-tile {
+                width: calc(100% - 50px);
+                padding: 25px 25px 40px 25px;
+            }
+        }
+
+        .education-wrapper {
+            .top-banner {
+                .floating-div {
+                    img {
+                        display: none;
+                    }
+
+                    .info {
+                        width: calc(100% - 60px);
+                        margin: auto 30px;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

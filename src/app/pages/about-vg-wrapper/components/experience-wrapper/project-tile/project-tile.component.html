@@ -1,0 +1,52 @@
+<div class="tile-view">
+    <h3 class="bold">
+        <img src="{{'/assets/logos/' + projectInfo?.image + '-logo.svg'}}" />
+        {{ projectInfo?.clientName }}
+    </h3>
+    <h4>{{ projectInfo?.title }}</h4><span class="project-duration body-text-2">{{ projectInfo?.duration }}</span>
+    <div class="body-text-1 project-description">{{ projectInfo?.description }}</div>
+
+    <div class="buttons-wrapper">
+        <button class="view-accomplishments-button view-link" (click)="toggleAccomplishment();">
+            View Accomplishments
+        </button>
+        <button class="view-more-button view-link" (click)="toggleShowMoreInfo();">
+            {{ showMoreInfo ? 'View Less' : 'View More' }}
+        </button>
+    </div>
+
+    <div [ngClass]="showAccomplishment ? 'top-tile-reveal show' : 'top-tile-reveal'">
+        <h3 class="bold">
+            {{ projectInfo?.image }} Accomplishments
+        </h3>
+        <h4 class="close-accomplishments" (click)="toggleAccomplishment();">X</h4>
+        <ul>
+            <li *ngFor="let accomplishment of projectInfo?.accomplishments" class="body-text-3">
+                {{ accomplishment }}
+            </li>
+        </ul>
+
+        <div class="skills-images-wrapper">
+            <img *ngFor="let imgtitle of projectInfo?.skillImages" src="{{ '/assets/logos/' + imgtitle + '-logo.png' }}" [alt]="imgtitle" [title]="imgtitle" />
+        </div>
+
+        <a class="visit-site-link view-link" [href]="projectInfo?.site" target="_blank">
+            <img src="/assets/logos/external-link.svg" />
+            Visit Site
+        </a>
+    </div>
+</div>
+
+<div [ngClass]="showMoreInfo ? 'more-info-block show' : 'more-info-block'">
+    <hr />
+    <h3 class="bold">Responsibilities</h3>
+    <div class="description-wrapper">
+        <ul>
+            <li *ngFor="let responsibility of projectInfo?.responsibilities" class="body-text-2">
+                {{ responsibility }}
+            </li>
+        </ul>
+    </div>
+    <img src="{{'/assets/logos/' + projectInfo?.image + '-location.png'}}" />
+    <span>{{ projectInfo?.address }}</span>
+</div>

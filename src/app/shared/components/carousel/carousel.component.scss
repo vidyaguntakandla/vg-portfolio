@@ -1,0 +1,179 @@
+@import "../../../sass/variables";
+@import "../../../sass/mixins";
+@import "../../../sass/vg_typography";
+@import "../../../sass/bootstrap_config.scss";
+
+:host {
+    flex: 1;
+}
+  
+.carousel {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0.5em;
+
+      
+    .slide {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        // zoom effect on hover
+        transition: transform 150ms cubic-bezier(0.25, 0.46, 0.45, 0.84);
+        border-radius: 0.5em;
+
+        .slide-content-wrapper {
+            position: relative;
+            height: 100%;
+            width: calc(100% - 125px);
+            margin: auto;
+
+            h2 {
+                padding: 0;
+                margin-bottom: 50px;
+            }
+
+            > * {
+                text-align: center;
+                padding: 0 60px;
+                word-break: break-word;
+            }
+
+            img {
+                height: 68%;
+                width: 50%;
+                -o-object-fit: cover;
+                object-fit: cover;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+        }
+
+        &:hover {
+            transform: scale(1.025);
+        }
+
+        @include media-breakpoint-between (xs, sm) {
+            .slide-content-wrapper {
+                width: calc(100% - 60px);
+
+                > * {
+                    margin: 10px 0;
+                    padding: 0 40px;
+                }
+
+                h2 {
+                    margin-bottom: 25px;
+                }
+
+                img {
+                    padding: 0 20px;
+                    width: 65%;
+                }
+            }
+        }
+    }
+}
+
+.paginator-wrapper {
+    outline: 0;
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    bottom: 0;
+    justify-content: center;
+    width: 100%;
+
+    .indicator {
+        height: 12px;
+        width: 12px;
+        margin: 0 6px;
+        border-radius: 50%;
+        border: 1px solid $theme-color;
+
+        &.active {
+            background-color: $theme-color;
+        }
+    }
+
+    @include media-breakpoint-between (xs, sm) {
+        .indicator {
+            height: 9px;
+            width: 9px;
+            margin: 0 5px;
+        }
+    }
+}
+
+// =========================
+// Next and Prev buttons
+// =========================
+.control {
+    border: none;
+    background-color: transparent;
+    outline: 0; // remove blue outline border, but make sure they are still focussable for accessibility
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5em;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    user-select: none;
+    height: 100%;
+    opacity: 80%;
+    transition: opacity 150ms cubic-bezier(0.25, 0.46, 0.45, 0.84);
+
+    &:hover,
+    &:focus {
+        opacity: 1;
+    }
+
+    /* Position the buttons */
+    &.next {
+        right: 0;
+    }
+
+    &.prev {
+        left: 0;
+    }
+
+    @include media-breakpoint-between (xs, sm) {
+        &.prev {
+            left: -17px;
+        }
+    
+        &.next {
+            right: -17px;
+        }
+    }
+}
+
+/* style the arrows */
+.arrow {
+    display: block;
+    border-left: 0.2em solid $theme-color;
+    border-bottom: 0.2em solid $theme-color;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 5px;
+
+    &.left {
+        transform: rotate(45deg);
+    }
+
+    &.right {
+        transform: rotate(225deg);
+    }
+
+    @include media-breakpoint-between (xs, sm) {
+        width: 20px;
+        height: 20px;
+    }
+}

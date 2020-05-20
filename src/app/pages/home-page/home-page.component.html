@@ -1,0 +1,40 @@
+<div class="home-page-wrapper">
+    <div class="maxout-grid">
+        <div class="top-banner">
+            <div class="left-banner">
+                <h1 class="page-title">I<span>'</span>m a Full Stack Software Developer</h1>
+                <app-social-media-links [horizontal]="true" class="social-links"></app-social-media-links>
+                <a class="view-link" [routerLink]="['/vidyaguntakandla/contact-deatils']">CONTACT ME</a>
+            </div>
+            <div class="right-banner">
+                <img src="/assets/backgrounds/love-coding.jpeg" />
+            </div>
+        </div>
+    
+        <div class="bottom-wrapper">
+            <div class="grids-wrapper">
+                <div class="grid" *ngFor="let grid of gridContent;">
+                    <div class="content">
+                        <img [src]="grid?.contentLogo" alt="gridImage" />
+                        <h4 class="bold">{{ grid?.title }}</h4>
+                        <span class="body-text-2">{{ grid?.description }}</span>
+                    </div>
+                    <div class="level-1"></div>
+                    <div class="level-2"></div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="homepage-footer">
+            <h5>Explore my work over past 5 years:</h5>
+            <div class="nav-wrapper">
+                <a [routerLink]="['/vidyaguntakandla/experience']">Experience</a>
+                <a [routerLink]="['/vidyaguntakandla/skills']">Design + Code</a>
+                <a href="/assets/vg_coverletter.doc" tittle="Download coverletter" download>Cover Letter</a>
+                <a href="/assets/vg_resume.docx" tittle="Download Resume" download>Resume</a>
+                <a href="https://www.jobcase.com/p/vidya.guntakandla" target="_blank" title="jobcase profile">Job Case Profile</a>
+                <a href="/assets/my-profile.pdf" download title="Download linkedIn profile">LinkedIn Profile</a>
+            </div>
+        </div>
+    </div>
+</div>

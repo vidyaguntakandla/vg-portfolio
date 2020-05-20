@@ -1,0 +1,19 @@
+<div class="page-container">
+    <div class="education-wrapper">
+        <div class="top-banner">
+            <img width="250" class="gifi-image" alt="404 image" src="https://media.giphy.com/media/1BeGxAOxkzFBdHvDrQ/giphy.gif">
+        </div>
+    </div>
+
+    <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+        <path d="M0 0 L50 100 L100 0 Z" fill="#f3f3f3" stroke="white"></path>
+    </svg>
+
+    <div class="degrees-wrapper">
+        <h1>Education</h1>
+        <div class="header-bar"></div>
+        <div *ngFor="let degree of degreesData" class="degree-tile">
+            <app-degree-tile [degreeInfo]="degree"></app-degree-tile>
+        </div>
+    </div>
+</div>

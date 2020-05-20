@@ -1,0 +1,194 @@
+a {
+  background-color: transparent;
+}
+
+.socialMediaButtons {
+  &.socialButtonHorizontal,
+  &.socialButtonVertical {
+    a {
+      min-width: inherit;
+      line-height: unset;
+      padding: 0;
+      box-shadow: unset;
+      border: none;
+      border-radius: 0px;
+
+      &:hover {
+        box-shadow: unset;
+      }
+    }
+  }
+  &.socialButtonHorizontal {
+    a {
+      margin: 0 10px;
+      display: inline-block;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &.socialLike {
+        margin-top: 5px !important;
+      }
+    }
+  }
+
+  &.socialButtonVertical {
+    margin-top: 26px;
+
+    a {
+      margin: 20px auto;
+    }
+  }
+}
+
+.pulLButtonsRight {
+  text-align: right;
+  margin-left: auto;
+}
+
+a {
+  cursor: pointer;
+  display: block;
+}
+
+.socialLike {
+  width: 27px;
+  height: 25px;
+  object-fit: contain;
+  outline-offset: 5px;
+  background-repeat: no-repeat;
+  background-image: url('/assets/social/like.svg');
+
+  &:hover {
+    background-image: url('/assets/social/like-hover.svg');
+  }
+
+  &:active {
+    background-image: url('/assets/social/active-like-button.svg');
+  }
+}
+
+.icon-linkedin {
+  width: 30px;
+  height: 28px;
+  object-fit: contain;
+  outline-offset: 7px;
+  background-repeat: no-repeat;
+  background-image: url('/assets/social/linkedin-icon.svg');
+  vertical-align: bottom;
+
+  &:hover {
+    background-image: url('/assets/social/linkedin-icon-hover.svg');
+  }
+
+  &:active {
+    background-image: url('/assets/social/linkedin-icon-hover.svg');
+  }
+}
+
+.icon-facebook {
+  width: 24px;
+  height: 21px;
+  object-fit: contain;
+  outline-offset: 9px;
+  background-repeat: no-repeat;
+  background-image: url('/assets/social/facebook-icon-blue.svg');
+
+  &:hover {
+    background-image: url('/assets/social/facebook-icon-blue-hover.svg');
+  }
+
+  &:active {
+    background-image: url('/assets/social/facebook-icon-blue-hover.svg');
+  }
+}
+
+.icon-email {
+  width: 30px;
+  height: 28px;
+  object-fit: contain;
+  outline-offset: 6px;
+  background-repeat: no-repeat;
+  vertical-align: sub;
+  background-image: url('/assets/social/icon-email.svg');
+
+  &:hover {
+    background-image: url('/assets/social/icon-email-hover.svg');
+  }
+
+  &:active {
+    background-image: url('/assets/social/icon-email-active.svg');
+  }
+}
+
+.icon-printer {
+  width: 27px;
+  height: 29px;
+  margin-bottom: -5px !important;
+  object-fit: contain;
+  outline-offset: 6px;
+  background-repeat: no-repeat;
+  background-image: url('/assets/social/icon-printer.svg');
+
+  &:hover {
+    background-image: url('/assets/social/icon-printer-hover.svg');
+  }
+
+  &:active {
+    background-image: url('/assets/social/active-icon-printer.svg');
+  }
+}
+
+.icon-download-resume {
+  width: 30px;
+  height: 28px;
+  object-fit: contain;
+  outline-offset: 6px;
+  background-repeat: no-repeat;
+  background-image: url('/assets/social/icon-download-resume.svg');
+
+  &:hover {
+    background-image: url('/assets/social/icon-download-resume-hover.svg');
+  }
+
+  &:active {
+    background-image: url('/assets/social/active-download-resume-icon.svg');
+  }
+}
+
+.icon-download {
+  width: 30px;
+  height: 28px;
+  object-fit: contain;
+  outline-offset: 6px;
+  background-repeat: no-repeat;
+  background-image: url('/assets/social/icon-download.svg');
+
+  &:hover {
+    background-image: url('/assets/social/icon-download-hover.svg');
+  }
+
+  &:active {
+    background-image: url('/assets/social/active-download-icon.svg');
+  }
+}
+
+a.icon-facebook.mat-flat-button{
+  width: 20px;
+}
+
+a.icon-twitter.mat-flat-button{
+  width: 24px;
+  height: 20px;
+}
+
+@media print {
+  .socialMediaButtons {
+    display: none;
+  }
+}
