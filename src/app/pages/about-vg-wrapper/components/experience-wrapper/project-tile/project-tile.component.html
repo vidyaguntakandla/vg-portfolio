@@ -3,8 +3,8 @@
         <img src="{{'/assets/logos/' + projectInfo?.image + '-logo.svg'}}" />
         {{ projectInfo?.clientName }}
     </h3>
-    <h4>{{ projectInfo?.title }}</h4><span class="project-duration body-text-2">{{ projectInfo?.duration }}</span>
-    <div class="body-text-1 project-description">{{ projectInfo?.description }}</div>
+    <h4>{{ projectInfo?.title }}</h4><span class="project-duration content-text-2">{{ projectInfo?.duration }}</span>
+    <div class="content-text-1 project-description">{{ projectInfo?.description }}</div>
 
     <div class="buttons-wrapper">
         <button class="view-accomplishments-button view-link" (click)="toggleAccomplishment();">
@@ -21,7 +21,7 @@
         </h3>
         <h4 class="close-accomplishments" (click)="toggleAccomplishment();">X</h4>
         <ul>
-            <li *ngFor="let accomplishment of projectInfo?.accomplishments" class="body-text-3">
+            <li *ngFor="let accomplishment of projectInfo?.accomplishments" class="content-text-3">
                 {{ accomplishment }}
             </li>
         </ul>
@@ -42,7 +42,7 @@
     <h3 class="bold">Responsibilities</h3>
     <div class="description-wrapper">
         <ul>
-            <li *ngFor="let responsibility of projectInfo?.responsibilities" class="body-text-2">
+            <li *ngFor="let responsibility of projectInfo?.responsibilities" class="content-text-2">
                 {{ responsibility }}
             </li>
         </ul>

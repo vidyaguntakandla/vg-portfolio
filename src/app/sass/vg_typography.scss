@@ -60,8 +60,7 @@ h5 {
 }
 
 
-/* Body Text Section */
-.body-text-1 {
+.content-text-1 {
   @include font-size-fluid-type(320px, 1440px, 15px, 20px);
 
   font-family: $tt-norms;
@@ -70,7 +69,7 @@ h5 {
   color: $black;
 }
 
-.body-text-2 {
+.content-text-2 {
   @include font-size-fluid-type(320px, 1440px, 14px, 17px);
 
   font-family: $tt-norms;
@@ -79,7 +78,7 @@ h5 {
   color: $black;
 }
 
-.body-text-3 {
+.content-text-3 {
   @include font-size-fluid-type(320px, 1440px, 12px, 15px);
 
   font-family: $tt-norms;
@@ -88,7 +87,7 @@ h5 {
   color: $black;
 }
 
-.body-text-4 {
+.content-text-4 {
   @include font-size-fluid-type(320px, 1440px, 11px, 13px);
 
   font-family: $tt-norms;

@@ -7,13 +7,13 @@
     </div>
     <div class="degree-description">
         <ul>
-            <li class="body-text-1">{{ degreeInfo?.degree }}</li>
-            <li class="body-text-1">{{ 'Graduated with ' + degreeInfo?.score + ' GPA' }}</li>
+            <li class="content-text-1">{{ degreeInfo?.degree }}</li>
+            <li class="content-text-1">{{ 'Graduated with ' + degreeInfo?.score + ' GPA' }}</li>
         </ul>
         <img src="/assets/grad-1.JPG" *ngIf="degreeInfo?.degree === 'Masters in Computer Science'"/>
     </div>
 
     <div class="duration-location-info">
-        <span class="degree-duration body-text-2">{{ degreeInfo?.duration + ' | ' + degreeInfo?.address }}</span>
+        <span class="degree-duration content-text-2">{{ degreeInfo?.duration + ' | ' + degreeInfo?.address }}</span>
     </div>
 </div>
